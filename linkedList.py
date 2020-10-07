@@ -27,11 +27,11 @@ class LinkedList:
         message+="}"
         return(message)
 
-    # def get_by_index(self, index):
-    #     aux=self.head
-    #     for i in range(index):
-    #         aux=aux.next
-    #     return aux
+    def get_by_index(self, index):
+        aux=self.head
+        for i in range(index):
+            aux=aux.next
+        return aux
     
     def get_length(self):
         aux=self.head
