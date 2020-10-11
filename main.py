@@ -4,13 +4,14 @@ from linkedList import LinkedList
 from imageControl import ImageControl 
 
 
-img = ImageControl("image.jpg")
+img = ImageControl("brilho.jpg")
 img.show_image()
-img.image_to_linked_list()
-#img.show_list()
-img.linked_list_to_image()
-
+img.order_pixels()
 img.show_custom_image()
+
+#img.order_pixels()
+#img.show_list()
+#img.show_custom_image()
 
 cv.waitKey(0)
 cv.destroyAllWindows()

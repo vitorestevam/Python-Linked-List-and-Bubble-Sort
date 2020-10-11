@@ -60,4 +60,17 @@ class LinkedList:
                     
                 nodeActual=nodeActual.next
 
+    def bubble_sort_image_by_hue(self):
+        #print("tamanho:",self.get_length())
+        for size in range(self.get_length()-1,0,-1): #get the highest index that will reach
+            nodeActual=self.head
+            for i in range(size): #index to read the elements from 0 to size
+                nodeNext=nodeActual.next
+                if(nodeActual.data[2]>nodeNext.data[2]): #compara a hue
+                    temp=nodeNext.data
+                    nodeNext.data=nodeActual.data
+                    nodeActual.data=temp
+                    
+                nodeActual=nodeActual.next
+
 
