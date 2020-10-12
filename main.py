@@ -1,17 +1,15 @@
-import numpy as np
 import cv2 as cv
-from linkedList import LinkedList 
 from imageControl import ImageControl 
 
+#usa em uma imagem de cada vez, deixei juntas pra facilitar
 
-img = ImageControl("brilho.jpg")
+img = ImageControl("images/image.jpg")
+#img = ImageControl("images/image2.jpg")
+#img = ImageControl("images/image3.jpg")
+#img = ImageControl("images/image4.jpg")
+
 img.show_image()
 img.order_pixels()
-img.show_custom_image()
-
-#img.order_pixels()
-#img.show_list()
-#img.show_custom_image()
 
 cv.waitKey(0)
 cv.destroyAllWindows()
