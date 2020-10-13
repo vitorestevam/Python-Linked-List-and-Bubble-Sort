@@ -1,6 +1,5 @@
 import numpy as np
 import cv2 as cv
-import time
 from linkedList import LinkedList 
 
 class ImageControl:
@@ -16,11 +15,11 @@ class ImageControl:
         print(self.imgBGR.shape)
 
     def show_image(self):
-        cv.imshow('ORIGINAL',self.imgBGR)
+        cv.imshow('ORIGINAL IMAGE',self.imgBGR)
 
     def show_custom_image(self):
         self.orderImage=cv.cvtColor(self.orderImage, cv.COLOR_HSV2BGR)
-        cv.imshow('ORDINATE',self.orderImage)
+        cv.imshow('ORDERED IMAGE',self.orderImage)
 
     def show_list(self):
         for i in range(self.imgList.get_length()):
